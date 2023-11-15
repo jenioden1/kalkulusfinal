@@ -899,7 +899,7 @@ about
 }
 
 footer {
-  margin-top: 200px;
+  margin-top: -200px;
   padding-top: 120px;
   background-image: url(../images/footer-bg.png);
   background-repeat: no-repeat;
@@ -913,6 +913,7 @@ footer .footer-content {
 }
 
 .contact-form {
+  margin-top: 100px;
   position: relative;
   z-index: 10;
   padding: 45px;
