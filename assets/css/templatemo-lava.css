@@ -545,7 +545,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    margin-left: -30px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -589,7 +589,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #fba70b !important;
-    color: #fba70b !important;
+    color: #000000 !important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
