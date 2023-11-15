@@ -549,14 +549,14 @@ header
   }
   .header-area .menu-trigger {
     display: block !important;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .header-area .main-nav {
     margin-top: 10px;
     background-color: #e0e0e0;
-    padding: 10px; /* Atur padding agar bayangan terlihat */
+    padding: -50px; /* Atur padding agar bayangan terlihat */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
-    border-radius: 40px;
+    border-radius: 30px;
   }
   .header-area .main-nav .nav {
     float: none;
