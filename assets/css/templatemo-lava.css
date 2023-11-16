@@ -920,3 +920,9 @@ about
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+.typing {
+  background: linear-gradient(45deg, #ffa500, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
