@@ -20,7 +20,7 @@ header
 .header-area {
   position: fixed;
   top: 0px;
-  left: 135px;
+  left: 0px;
   right: 0px;
   z-index: 100;
   height: 100px;
@@ -306,6 +306,9 @@ header
 }
 
 @media (max-width: 1200px) {
+  .menghitung {
+    margin-top: 200px;
+  }
   .header-area .main-nav .nav li {
     padding-left: 12px;
     padding-right: 12px;
@@ -319,6 +322,9 @@ header
   .logo {
     text-align: center;
     float: none !important;
+  }
+  .menghitung {
+    margin-top: 400px;
   }
   .header-area {
     background-color: transparent;
@@ -414,6 +420,18 @@ header
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
     display: flex !important;
+  }
+  .header-area {
+    position: fixed;
+    top: 0px;
+    left: 136px;
+    right: 0px;
+    z-index: 100;
+    height: 100px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
 }
 
