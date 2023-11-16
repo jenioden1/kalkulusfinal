@@ -30,10 +30,7 @@ https://templatemo.com/tm-540-lava-landing-page
     />
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
-
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css" />
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -80,150 +77,74 @@ https://templatemo.com/tm-540-lava-landing-page
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Welcome Area Start ***** -->
-    <footer id="contact-us">
-      <div class="container">
-        <div class="footer-content">
-          <div class="row">
-            <!-- ***** Contact Form Start ***** -->
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="contact-form">
-                  <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                   
-                        <input
-                          type="number"
-                          id="a"
-                          placeholder="Masukkan nilai a"
-                        />
-                    
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <input
-                          type="number"
-                          id="b"
-                          placeholder="Masukkan nilai b"
-                        />
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <input
-                          type="number"
-                          id="c"
-                          placeholder="Masukkan nilai c"
-                        />
-                    </div>
-                    <div class="row">
-                      <div class="col-6 mb-2">
-                          <button
-                            id="calculateButton"
-                            class="main-button"
-                          >
-                            Hitung
-                          </button>
-                      </div>
-                      <div class="col-6">
-                          <button
-                            id="resetButton"
-                            class="main-button"
-                          >
-                            Reset
-                          </button>
-                      </div>
-                      <div class="col-6 mt-4">
-                          <button
-                            id="zoomInButton"
-                            class="main-button"
-                          >
-                            Zoom In
-                          </button>
-                      </div>
-                      <div class="col-6 mt-4">
-                          <button
-                            id="zoomOutButton"
-                            class="main-button"
-                            style="padding: 15px"
-                          >
-                            Zoom Out
-                          </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="contact-form">
-                    <canvas
-                      id="quadraticChart"
-                      width="300"
-                      height="375"
-                    ></canvas>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 col-sm-12">
-              <div class="contact-form">
-                  <div class="row">
-                    <h2 style="font-size: 29px; font-weight: 600">
-                      History Pengerjaan
-                    </h2>
-                    <ul id="history"></ul>
-                  </div>
-              </div>
-            </div>
-
-            <!-- ***** Contact Form End ***** -->
-            <div class="right-content col-lg-12 col-md-12 col-sm-12">
-              <h2>More About <em>Lava</em></h2>
-              <p>
-                Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo
-                auctor. Duis at finibus odio. Vivamus ut pharetra arcu, in porta
-                metus. Suspendisse blandit pulvinar ligula ut elementum.
-                <br /><br />If you need this contact form to send email to your
-                inbox, you may follow our
-                <a
-                  rel="nofollow"
-                  href="https://templatemo.com/contact"
-                  target="_parent"
-                  >contact</a
-                >
-                page for more detail.
-              </p>
-              <ul class="social">
-                <li>
-                  <a href="https://fb.com/templatemo"
-                    ><i class="fa fa-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-rss"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-dribbble"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="sub-footer">
-              <p>
-                Copyright &copy; 2020 Lava Landing Page | Designed by
-                <a rel="nofollow" href="https://templatemo.com">TemplateMo</a>
-              </p>
-            </div>
-          </div>
-        </div>
+    <h1 class="text-3xl font-semibold text-center text-gray-700 mb-4">
+      Kalkulator Persamaan Kuadrat
+    </h1>
+    <div class="calculator-container bg-white p-4 rounded-lg shadow-md">
+      <div class="input-container mb-4">
+        <input
+          type="number"
+          id="a"
+          placeholder="Masukkan nilai a"
+          class="p-2 border border-gray-300 rounded margin"
+        />
+        <input
+          type="number"
+          id="b"
+          placeholder="Masukkan nilai b"
+          class="p-2 border border-gray-300 rounded"
+        />
+        <input
+          type="number"
+          id="c"
+          placeholder="Masukkan nilai c"
+          class="p-2 border border-gray-300 rounded"
+        />
       </div>
-    </footer>
-    <!-- ***** Welcome Area End ***** -->
+      <button
+        id="calculateButton"
+        class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 cursor-pointer"
+      >
+        Hitung
+      </button>
+      <button
+        id="resetButton"
+        class="bg-red-500 text-white p-2 rounded hover:bg-red-600 cursor-pointer"
+      >
+        Reset
+      </button>
+      <button
+        id="zoomInButton"
+        class="bg-green-500 text-white p-2 rounded hover:bg-green-600 cursor-pointer"
+      >
+        Zoom In
+      </button>
+      <button
+        id="zoomOutButton"
+        class="bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600 cursor-pointer"
+      >
+        Zoom Out
+      </button>
+      <div class="result-container mt-4">
+        <p id="result" class="text-lg text-blue-700"></p>
+        <p id="extremePoint" class="text-lg text-blue-700"></p>
+      </div>
+      <div class="chart-container border border-gray-300 mt-4">
+        <canvas
+          id="quadraticChart"
+          width="800"
+          height="800"
+          class="w-full h-full"
+        ></canvas>
+      </div>
+      <div class="history-container mt-4">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-2">
+          History Pengerjaan:
+        </h2>
+        <ul id="history" class="list-disc list-inside text-gray-700 pl-4"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
 
     <script src="script.js"></script>
     <!-- jQuery -->

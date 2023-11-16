@@ -1,15 +1,3 @@
---------------------------------------------- */
-/* 
----------------------------------------------
-font & reset css
---------------------------------------------- 
-
----------------------------------------------
-reset
---------------------------------------------- 
-*/
-
-
 * {
   margin: 0;
   padding: 0;
@@ -1072,4 +1060,37 @@ footer .sub-footer p {
   footer .social {
     text-align: center;
   }
+}
+
+.sosmed {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sosmed li {
+  display: inline-block;
+  margin-right: 10px; /* Optional: untuk memberikan jarak antar elemen */
+}
+
+.sosmed li a:hover {
+  background-color: #fba70b;
+  border-color: #fba70b;
+  color: #fff;
+}
+
+.sosmed li a {
+  color: rgb(124, 51, 243);
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #8d8d8d;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
