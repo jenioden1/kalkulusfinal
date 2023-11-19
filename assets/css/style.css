@@ -926,3 +926,9 @@ about
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.typed-cursor {
+  background: linear-gradient(45deg, #ffa500, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
