@@ -932,3 +932,8 @@ about
   -webkit-background-clip: text;
   color: transparent;
 }
+
+.features-icon img {
+  height: 200%;
+  width: 200%;
+}
