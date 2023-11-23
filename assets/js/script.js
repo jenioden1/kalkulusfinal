@@ -2,6 +2,7 @@ const calculateButton = document.getElementById("calculateButton");
 const resetButton = document.getElementById("resetButton");
 const zoomInButton = document.getElementById("zoomInButton");
 const zoomOutButton = document.getElementById("zoomOutButton");
+
 const resultElement = document.getElementById("result");
 const extremePointElement = document.getElementById("extremePoint");
 const canvas = document.getElementById("quadraticChart");
@@ -152,6 +153,7 @@ resetButton.addEventListener("click", function () {
   extremePointElement.textContent = "";
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   historyElement.innerHTML = "";
+
   a = b = c = undefined; // Reset values of a, b, c
   roots = []; // Reset roots
   zoomInButton.disabled = false;

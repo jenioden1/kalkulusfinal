@@ -51,7 +51,7 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: linear-gradient(145deg, #f4813f 0%, #f1556a 100%);
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -89,7 +89,7 @@ global styles
 */
 html,
 body {
-  background: rgb(245, 245, 245);
+  min-height: 100%;
   font-family: "Poppins", sans-serif;
 }
 
